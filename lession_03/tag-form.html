@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lession - 02 - tag - Form</title>
+
+    <style>
+
+        table, td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+        table {
+            margin-bottom: 10px;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="use-email">E-mail</label>
+                    </td>
+                    <td>
+                        <input type="email" id="use-email" value="ttt@gmail.com" required placeholder="Enter e-mail">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email-type">E-mail học tập</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="email-type">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email-provider">E-mail bạn được cung cấp</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="email-provider" checked>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Trạng thái</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="use-email" name="status" value="no-active" required checked>
+                        <input type="radio" id="use-email" name="status" value="active" required>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit">Đăng ký</button>
+    </form>
+</body>
+</html>

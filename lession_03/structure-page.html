@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            color: #222222;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        header {
+            background-color: red;
+            height: 250px;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 100%;
+        }
+
+        nav {
+            background-color: green;
+            padding: 20px;
+            width: 100%;
+        }
+
+        main {
+            background-color: rgb(220 220 220);
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 15px;
+            align-items: stretch;
+            height: 550px;
+            margin-bottom: 15px;
+            padding: 35px;
+            width: 100%;
+        }
+
+        aside {
+            background-color: green;
+            grid-column: 1 / 2;
+            padding: 15px;
+        }
+
+        section {
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            grid-column: 2 / 3;
+            padding: 15px;
+        }
+
+        article {
+            background-color: yellowgreen;
+            height: 100%;
+            padding: 15px;
+        }
+
+        footer {
+            background-color: blue;
+            height: 250px;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header component -->
+    <header>
+        Header component
+        
+        <nav>
+            Navigation Tag
+        </nav>
+    </header>
+
+    <!-- Main component -->
+    <main>
+        <aside>
+            Aside Tag
+        </aside>
+
+        <section>
+            Section Tag
+            <article>
+                Article Tag
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer component -->
+    <footer>
+        Footer component
+    </footer>
+</body>
+</html>
