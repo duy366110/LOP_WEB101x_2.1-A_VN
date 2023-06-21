@@ -9,3 +9,11 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+p.priority {
+    color: green;
+}
+
+#priority {
+    color: blue;
+}

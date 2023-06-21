@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style-text.css">
+    <title>BÀI - 04 - style paragraph</title>
+    <style>
+        a[href = './index.html'] {
+            text-decoration: none;
+        }
+
+        .list {
+            list-style: none;
+            margin-bottom: 15px;
+            padding: 0px;
+        }
+
+        .list li {
+            background-color: greenyellow;
+            display: inline-block;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        .list li:last-child {
+            margin-left: 30px;
+        }
+
+        input[name="e-mail"] {
+            border: 1px solid red;
+        }
+
+        .status-user {
+            display: none;
+        }
+
+        input[name='status']:checked + .status-user {
+            display: block;
+        }
+
+        .content::before {
+            background-color: red;
+            content: '';
+            display: inline-block;
+            height: 15px;
+            margin-right: 10px;
+            width: 35px;
+            vertical-align: middle;
+        }
+
+        .content::after {
+            background-color: green;
+            content: '';
+            display: inline-block;
+            height: 15px;
+            margin-left: 10px;
+            width: 35px;
+            vertical-align: middle;
+        }
+
+        /* p.priority {
+            color: green;
+        }
+
+        #priority {
+            color: blue;
+        } */
+
+    </style>
+</head>
+<body>
+    <h2 class="title">CSS pseudo selector</h2>
+    <a href="./index.html">Trang chủ</a>
+
+    <ul class="list">
+        <li>Item element - 01</li>
+        <li>Item element - 02</li>
+        <li>Item element - 03</li>
+        <li>Item element - 04</li>
+        <li>Item element - 05</li>
+    </ul>
+
+    <form>
+        <label for="e-mail">E-mail</label>
+        <input type="email" id="e-mail" name="e-mail"> <br/>
+
+        <label for="status">Show status</label>
+        <input type="checkbox" id="status" name="status">
+        <p class="status-user">User information status!!</p>
+    </form>
+
+    <p class="content">Content demo block</p>
+
+    <h2 class="title">CSS priority</h2>
+    <p class="priority" id="priority" style="color: red;">Demo content priority</p>
+
+</body>
+</html>
