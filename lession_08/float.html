@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style-text.css">
+    <title>BÀI - 07 - display</title>
+    <style>
+        .test {
+            border: 1px solid #000;
+        }
+
+        .test::after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+
+        .div {
+            border: 1px solid #000000;
+            height: 250px;
+            width: 250px;
+        }
+
+        .div-01 {
+            float: left;
+        }
+
+        .div-04 {
+            float: right;
+            background-color: green;
+        }
+
+        .content-test {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        <div class="div div-01"></div>
+        <div class="div div-04">div - 04</div>
+    </div>
+
+    <div class="content-test">Test</div>
+</body>
+</html>
