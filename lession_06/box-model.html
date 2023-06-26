@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./assets/css/style-text.css">
     <title>BÀI - 06 - style box-model - margin - padding</title>
     <style>
+        * {
+            box-sizing: padding-box;
+        }
+        
         .box-model {
             background-color: red;
             border: 1px solid #000000;
@@ -19,6 +23,9 @@
     </style>
 </head>
 <body>
+    <div class="box-model">
+        <p>Text</p>
+    </div>
     <div class="box-model"></div>
 </body>
 </html>
