@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style-text.css">
+    <title>BÀI - 09 - display</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px 15px;
+            /* column-gap: 10px; */
+            /* row-gap: 10px; */
+            height: 500px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .div {
+            background-color: red;
+            height: 150px;
+            width: 150px;
+        }
+
+        .div-01 {
+            order: 0;
+        }
+
+        .div-02 {
+            order: 1;
+        }
+
+        .div-03 {
+            order: 2;
+        }
+
+        .div-04 {
+            order: 3;
+        }
+
+        .div-05 {
+            order: 4;
+        }
+
+        .div-06 {
+            order: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div div-01">div 01</div>
+        <div class="div div-02"> div 02 </div>
+        <div class="div div-03"> div 03 </div>
+        <div class="div div-04"> div 04 </div>
+        <div class="div div-05"> div 05 div 05 div 05 div 05 div 05 div 05 div 05 div 05 </div>
+        <div class="div div-06"> div 06 </div>
+        <div class="div div-06"> div 07 </div>
+        <div class="div div-06"> div 08 </div>
+        <div class="div div-06"> div 09 </div>
+        <div class="div div-06"> div 10 </div>
+        <div class="div div-06"> div 11 </div>
+        <div class="div div-06"> div 12 </div>
+        <div class="div div-06"> div 13 </div>
+    </div>
+</body>
+</html>
