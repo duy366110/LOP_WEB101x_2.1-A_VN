@@ -12,7 +12,9 @@
             /* grid-template-columns: 50px 50px 50px 50px;
             grid-template-rows: 50px 50px 50px 50px; */
 
-            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-columns: 150px minmax(350px, 375px) 150px 1fr; */
+            /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+            grid-template-columns: repeat(6, 150px);
             grid-template-rows: repeat(4, 1fr);
 
 
@@ -37,69 +39,7 @@
         }
 
         .div-01 {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row: 1 / 2;
-        }
-
-        .div-02 {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-        }
-
-        .div-03 {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-        }
-
-        .div-04 {
-            grid-column: 4 / 4;
-            grid-row: 1 / 2;
-        }
-
-        .div-05 {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-
-        .div-06 {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-        }
-
-        .div-07 {
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
-        }
-
-        .div-08 {
-            grid-column: 4 / 5;
-            grid-row: 2 / 3;
-        }
-
-        .div-09 {
-            grid-column: 1 / 2;
-            grid-row: 3 / 4;
-        }
-
-        .div-10 {
-            grid-column: 2 / 3;
-            grid-row: 3 / 4;
-        }
-
-        .div-11 {
-            grid-column: 3 / 4;
-            grid-row: 3 / 4;
-        }
-
-        .div-12 {
-            grid-column: 4 / 5;
-            grid-row: 3 / 4;
-        }
-
-        .div-13 {
-            grid-column: 1 / 2;
-            grid-row: 4 / 5;
+            grid-column: 1 / span 2;
         }
     </style>
 </head>
@@ -109,15 +49,15 @@
         <div class="div div-02"> div 02 </div>
         <div class="div div-03"> div 03 </div>
         <div class="div div-04"> div 04 </div>
-        <div class="div div-05"> div 05 div 05 div 05 div 05 div 05 div 05 div 05 div 05 </div>
+        <!-- <div class="div div-05"> div 05 div 05 div 05 div 05 div 05 div 05 div 05 div 05 </div>
         <div class="div div-06"> div 06 </div>
         <div class="div div-07"> div 07 </div>
         <div class="div div-08"> div 08 </div>
         <div class="div div-09"> div 09 </div>
-        <div class="div div-10"> div 10 </div>
-        <div class="div div-11"> div 11 </div>
+        <div class="div div-10"> div 10 </div> -->
+        <!-- <div class="div div-11"> div 11 </div>
         <div class="div div-12"> div 12 </div>
-        <div class="div div-13"> div 13 </div>
+        <div class="div div-13"> div 13 </div> -->
     </div>
 </body>
 </html>
