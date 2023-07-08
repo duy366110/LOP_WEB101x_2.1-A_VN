@@ -16,43 +16,17 @@
             height: 150px;
         }
 
-        .div-01 {
-            grid-column: 1 / 3;
+        @media screen and (min-width: 375px) {
+            .div-01, .div-02, .div-03, .div-04, .div-05, .div-06, .div-07, .div-08, .div-09 {
+                grid-column: 1 / 5;
+            }
         }
 
-        .div-02 {
-            grid-column: 3 / 4;
-        }
+        @media screen and (min-width: 768px) {
+            .div-01 {
+                grid-column: 1 / 3;
+            }
 
-        .div-03 {
-            grid-column: 4 / 5;
-        }
-
-        .div-04 {
-            grid-column: 1 / 2;
-        }
-
-        .div-05 {
-            grid-column: 2 / 4;
-        }
-
-        .div-06 {
-            grid-column: 4 / 5;
-        }
-
-        .div-07 {
-            grid-column: 1 / 2;
-        }
-
-        .div-08 {
-            grid-column: 2 / 3;
-        }
-
-        .div-09 {
-            grid-column: 3 / 5;
-        }
-
-        @media screen and (max-width: 992px) {
             .div-02 {
                 grid-column: 3 / 5;
             }
@@ -75,13 +49,60 @@
                 grid-column: 2 / 5;
                 grid-row: 3 / 4;
             }
-        }
 
-        @media screen and (max-width: 768px) {
-            .div-01, .div-02, .div-03, .div-04, .div-05, .div-06, .div-07, .div-08, .div-09 {
-                grid-column: 1 / 5;
+            .div-07 {
+                grid-column: 1 / 2;
+            }
+
+            .div-08 {
+                grid-column: 2 / 3;
+            }
+
+            .div-09 {
+                grid-column: 3 / 5;
             }
         }
+
+        @media screen and (min-width: 992px) {
+            .div-01 {
+                grid-column: 1 / 3;
+            }
+            
+            .div-02 {
+                grid-column: 3 / 4;
+            }
+
+            .div-03 {
+                grid-column: 4 / 5;
+            }
+
+            .div-04 {
+                grid-column: 1 / 2;
+            }
+
+            .div-05 {
+                grid-column: 2 / 4;
+                grid-row: 2 / 3;
+            }
+
+            .div-06 {
+                grid-column: 4 / 5;
+                grid-row: 2 / 3;
+            }
+
+            .div-07 {
+                grid-column: 1 / 2;
+            }
+
+            .div-08 {
+                grid-column: 2 / 3;
+            }
+
+            .div-09 {
+                grid-column: 3 / 5;
+            }
+        }
+
 
     </style>
 </head>
