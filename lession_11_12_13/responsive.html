@@ -9,21 +9,23 @@
         html, body {
             font-size: 20px;
         }
+
         .container {
-            font-size: 15px;
+            background-color: green;
+            /* font-size: 15px; */
         }
 
         p {
             font-size: 1em;
         }
 
-        @media only screen and (400px <= width <= 900px) {
+        @media screen and (min-width: 400px) and (max-width: 900px), (min-width: 1200px) {
             .container {
                 background-color: red;
             }
 
             p {
-                font-size: 2rem;
+                font-size: 1em;
             }
         }
 
