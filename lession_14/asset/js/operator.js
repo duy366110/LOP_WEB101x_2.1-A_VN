@@ -131,4 +131,40 @@ window.onload = function(event) {
 
     console.log("So sánh bằng so sánh cả kiểu dữ liêu: ", a == d);
     console.log("So sánh bằng so sánh cả kiểu dữ liêu: ", a === d);
+
+
+    /**
+     * TOÁN TỬ LOGICAL
+      &&        -> AND
+      ||        -> OR
+      !        -> NOT
+    */
+
+    var a = 1;
+    var b = 2;
+
+    if((a > 0) && ( b < 5)) {
+        console.log('Điều kiện hợp lệ');
+
+    } else {
+        console.log("Điều kiện không hơp lệ");
+    }
+
+    let age = 20;
+
+    if((age < 15) || (age > 60)) {
+        console.log('Đối tượng ưu tiên');
+
+    } else {
+        console.log('Đối tượng không ưu tiên');
+    }
+
+    var option = null;
+    if(!option) {
+        console.log('Đi làm');
+        
+    } else {
+        console.log('Đi chơi');
+
+    }
 }
