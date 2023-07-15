@@ -167,4 +167,13 @@ window.onload = function(event) {
         console.log('Đi chơi');
 
     }
+
+
+    var a = true;
+    var b = false;
+    var c = 3;
+
+    console.log(a && b && c);
+    console.log(a || b || c);
+
 }
