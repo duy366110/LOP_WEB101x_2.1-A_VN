@@ -9,7 +9,7 @@ window.onload = function(event) {
      '' || ""       -> false
      */
 
-     if(!!0) {
+     if(0) {
         console.log("Truthy log");
 
      } else {

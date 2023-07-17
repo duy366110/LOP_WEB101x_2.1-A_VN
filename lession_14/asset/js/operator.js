@@ -23,7 +23,7 @@ window.onload = function(event) {
       var nhan = a * b;
       console.log("Nhân: " + nhan);
 
-      var luythua = b**2;
+      var luythua = 2**2;
       console.log("Luỹ thừa: " + luythua);
 
       var chia = 4 / 2;
@@ -34,6 +34,7 @@ window.onload = function(event) {
 
       // Toán tử tiền tố và toán tử hậu tố
       var a = 1;
+
 
       // step 1: cộng 1 cho a, a = a + 1, a = 2
       // step 2: trả về a = 7 và in ra màng hình
@@ -174,6 +175,8 @@ window.onload = function(event) {
     var c = 3;
 
     console.log(a && b && c);
-    console.log(a || b || c);
+
+
+    console.log(false || true || 3);
 
 }

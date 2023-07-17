@@ -79,7 +79,7 @@ window.onload = function(event) {
 
     // DATATYPE Array
 
-    var arr = ['HTML', 'CSS', 'JAVASCRIPT'];
+    var arr = ['HTML', 'CSS', 'JAVASCRIPT', 1];
     console.log(arr);
     console.log(typeof arr);
 

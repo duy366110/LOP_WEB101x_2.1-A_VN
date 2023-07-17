@@ -10,6 +10,7 @@ window.onload = function(event) {
 
     del();
 
+
     // Expression function
     const exp = function (a = 0, b = 0) {
         return a + b;
@@ -20,6 +21,7 @@ window.onload = function(event) {
     // Arrow function
     const arrow = (a = 1) => {
         console.log(a);
+        
     }
 
     arrow(3);

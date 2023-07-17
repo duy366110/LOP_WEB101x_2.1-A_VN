@@ -1,5 +1,5 @@
 window.onload = function(event) {
-    var team  = 'January, February, March, April, May, June, July, August, September, October, November, December';
+    var team  = "January, February, March, April, May, June, July, August, September, October, November, December";
 
     console.log(team.search('Feb'));
 
@@ -9,6 +9,6 @@ window.onload = function(event) {
     console.log(team.toLocaleLowerCase());
     console.log(team.toLocaleUpperCase());
 
-    team = team.replaceAll('J', "Q");
+    team = team.replace('J', "Q");
     console.log(team);
 }

@@ -1,6 +1,5 @@
 window.onload = function(event) {
 
-    var team = 10;
     var _team = 10;
     var $team = 10;
 
@@ -25,6 +24,7 @@ window.onload = function(event) {
     /* BUILT - IN - SETTIME OUT */
     setTimeout(() => {
         console.log('Hello setTimeout');
+        
     }, 1500)
 
     /* BUILT - IN - SETINTERVAL */
