@@ -13,7 +13,13 @@ window.onload = function(event) {
     // VÒNG LẶP FOR
     console.log('FOR');
     for(let i = 0; i < arr_02.length; i++) {
+        if(i == 1) {
+            // continue;
+            break;
+        }
+
         console.log(arr_02[i]);
+        // return;
     }
 
 
@@ -24,6 +30,16 @@ window.onload = function(event) {
         console.log(arr_02[i]);
         i++;
     }
+
+    let u = 0;
+
+    do {
+
+        console.log('Test');
+        console.log(u);
+        u++;
+
+    } while (u < arr_01.length)
     
     // VÒNG LẶP FOREACH
     console.log('FOREACH');
