@@ -2,7 +2,7 @@ window.onload = function(event) {
 
     // DOM
     let testList = document.getElementById("test-list");
-    console.log(testList);
+    console.log([testList]);
 
     let singleItem = document.querySelector(".test");
     console.log(singleItem);
@@ -15,6 +15,7 @@ window.onload = function(event) {
 
 
     itemsTest.forEach((doc) => {
+        console.log(doc);
         doc.addEventListener('click', function (event) {
             this.remove();
         })

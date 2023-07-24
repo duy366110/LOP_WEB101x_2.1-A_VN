@@ -13,10 +13,10 @@ window.onload = function(event) {
     // VÒNG LẶP FOR
     console.log('FOR');
     for(let i = 0; i < arr_02.length; i++) {
-        if(i == 1) {
-            // continue;
-            break;
-        }
+        // if(i == 1) {
+        //     // continue;
+        //     break;
+        // }
 
         console.log(arr_02[i]);
         // return;
@@ -45,6 +45,8 @@ window.onload = function(event) {
     console.log('FOREACH');
     arr_02.forEach((elm, index, arr_origin) => {
         console.log(elm);
+        console.log(index);
+        console.log(arr_origin);
 
     })
 

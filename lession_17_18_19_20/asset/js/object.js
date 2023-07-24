@@ -19,7 +19,7 @@ window.onload = function(event) {
     student['student_class'] = '12A2';
 
     console.log(student.firstName);
-    console.log(student.student_class);
+    console.log(student['student_class']);
     student.infor();
 
     function person (firstName, lastName, age) {
@@ -39,6 +39,9 @@ window.onload = function(event) {
     }
 
     person.prototype.address = 'Not Address';
+    person.prototype.show = function() {
+        console.log(this.address);
+    }
 
     let person_01 = new person('Nguyen', 'Van B', 30);
     person_01.address = 'TP HCM';
@@ -46,6 +49,7 @@ window.onload = function(event) {
 
     let person_02 = new person('Nguyen', 'Van C', 45);
     person_02.infor();
+    person_02.show();
 
 
 }
